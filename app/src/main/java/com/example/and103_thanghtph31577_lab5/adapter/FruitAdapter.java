@@ -52,7 +52,7 @@ public class FruitAdapter  extends RecyclerView.Adapter<FruitAdapter.ViewHolder>
         holder.binding.tvPriceQuantity.setText("price :" +fruit.getPrice()+" - quantity:" +fruit.getQuantity());
         holder.binding.tvDes.setText(fruit.getDescription());
         String url  = fruit.getImage().get(0);
-        String newUrl = url.replace("localhost", "192.168.102.162");
+        String newUrl = url.replace("localhost", "192.168.1.5");
         Glide.with(context)
                 .load(newUrl)
                 .thumbnail(Glide.with(context).load(R.drawable.baseline_broken_image_24))

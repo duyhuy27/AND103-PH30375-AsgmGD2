@@ -13,13 +13,14 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="#FFC107"
+        android:background="@color/primary"
         android:gravity="center_vertical">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Login"
+            android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold"
             android:layout_centerInParent="true" />
@@ -71,15 +72,37 @@
         android:text="Login"
         android:textColor="@android:color/white"
         android:textAllCaps="false"
-        android:backgroundTint="@color/black" />
+        android:background="@drawable/custom_btn" />
 
-    <!-- Register Text -->
-    <TextView
-        android:layout_width="wrap_content"
+
+    <LinearLayout
+        android:id="@+id/text_register"        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bạn chưa có tài khoản? Đăng ký ngay"
-        android:textColor="@android:color/black"
-        android:layout_marginTop="40dp"
-        android:id="@+id/text_register" />
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="Don't have an account?"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="Sign Up"
+            android:textColor="@color/primary"
+            android:textSize="14dp"
+            android:layout_marginStart="4dp"
+            />
+    </LinearLayout>
+
 
 </LinearLayout>

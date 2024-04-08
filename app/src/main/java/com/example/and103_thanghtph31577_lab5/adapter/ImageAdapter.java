@@ -35,7 +35,7 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ViewHolder>{
     @Override
     public void onBindViewHolder(@NonNull ImageAdapter.ViewHolder holder, int position) {
         String url = list.get(position);
-        String newUrl = url.replace("localhost", "192.168.102.162");
+        String newUrl = url.replace("localhost", "192.168.1.5");
 
         Glide.with(context)
                 .load(newUrl)

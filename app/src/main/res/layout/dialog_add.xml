@@ -21,7 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:background="@drawable/custtomedit"
+        android:background="@drawable/custom_edt"
         android:hint="Name distributor"
         android:padding="10dp" />
 
@@ -30,14 +30,14 @@
 
 
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_submit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:text="Submit"
         android:textColor="@color/white"
-        android:backgroundTint="@color/black"
+        android:background="@drawable/custom_btn"
         android:padding="10dp" />
 
 

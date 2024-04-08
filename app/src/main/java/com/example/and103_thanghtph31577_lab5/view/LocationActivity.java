@@ -110,8 +110,8 @@ public class LocationActivity extends AppCompatActivity {
 
 
 
-                Log.d("zzzzzzz", "onClick: "+ghnOrderRequest.getReturn_address());
-                ghnRequest.getApiService().GHNOrder(ghnOrderRequest).enqueue(responseOrder);
+                Log.d("zzzzzzz", "onClick: "+abc.getReturn_address());
+                ghnRequest.getApiService().GHNOrder(abc).enqueue(responseOrder);
 //
             }
         });
@@ -137,7 +137,7 @@ public class LocationActivity extends AppCompatActivity {
 
         @Override
         public void onFailure(Call<ResponseGHN<GHNOrderRespone>> call, Throwable t) {
-
+            Log.d("zzz  ", "onFailure: faild order  " + t.getMessage());
         }
     };
     Callback<com.example.and103_thanghtph31577_lab5.model.Response<Order>> responseOrderDatabase = new Callback<com.example.and103_thanghtph31577_lab5.model.Response<Order>>() {

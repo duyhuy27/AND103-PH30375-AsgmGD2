@@ -13,7 +13,7 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="@android:dimen/app_icon_size"
-        android:background="#FFC107"
+        android:background="@color/primary"
         android:layout_marginBottom="20dp"
         android:gravity="start|center_vertical"
 
@@ -29,6 +29,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:text="Fruit Detail"
             android:layout_toRightOf="@id/btn_back"
             android:textSize="18sp"
